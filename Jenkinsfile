@@ -10,6 +10,8 @@ pipeline {
             steps {
                 dir('C:/ProgramData/Jenkins/.jenkins/workspace/RepoC') {
                     git branch: 'main', credentialsId: 'Githubtoken', url: 'https://github.com/banupriya20/RepoC.git'
+                    bat 'git add output.csv'
+                    bat 'git commit -m "Add output.csv"'
                     bat 'git push origin main'
                 }
             }
