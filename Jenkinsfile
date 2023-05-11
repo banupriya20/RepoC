@@ -6,3 +6,4 @@ pipeline {
                 bat "python -u C:/ProgramData/Jenkins/.jenkins/workspace/doxygen_parser.py"
             }
         }
+    }
